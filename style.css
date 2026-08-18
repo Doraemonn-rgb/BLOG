@@ -1,62 +1,79 @@
 /* GENERAL STYLES */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+html,
+body {
+    min-width: 1400px;
+}
+
+body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: black;
     line-height: 1.7;
 }
 
+
 /* HEADER */
 
-header{
+header {
     background-color: black;
     padding: 18px 8%;
     display: flex;
-    flex-wrap: wrap; 
     align-items: center;
     justify-content: space-between;
-    gap: 20px; 
-    min-height: 150px;
-    height: 150px;
-    border-bottom: 1px solid #222222;
+    gap: 20px;
 
+    min-width: 1400px;
+    height: 150px;
+
+    border-bottom: 1px solid #222222;
 }
 
+
 /* LOGO */
+
 .logo {
     display: flex;
     align-items: center;
     height: 100%;
+
+    flex-shrink: 0;
 }
 
 .logo img {
     width: 300px;
     height: auto;
-    max-width: 100%;
     object-fit: contain;
     display: block;
 }
+
 
 /* SEARCH */
 
 .search {
     display: flex;
     align-items: center;
+
     background-color: #1a1a1a;
     border: 1px solid #333333;
     border-radius: 30px;
+
     padding: 5px;
+
     width: 500px;
+    min-width: 500px;
     max-width: 500px;
-    flex: 1;
+
+    flex-shrink: 0;
+
     margin: 0 auto;
+
     transition: 0.3s ease;
 }
 
@@ -67,12 +84,17 @@ header{
 
 .search input {
     flex: 1;
+
     width: auto;
+
     padding: 14px 18px;
+
     background: transparent;
     border: none;
     outline: none;
+
     color: #ffffff;
+
     font-size: 15px;
 }
 
@@ -82,13 +104,18 @@ header{
 
 .search button {
     padding: 12px 22px;
+
     background-color: #ffffff;
     color: #000000;
+
     border: none;
     border-radius: 25px;
+
     cursor: pointer;
+
     font-weight: bold;
     font-size: 15px;
+
     transition: 0.2s ease;
 }
 
@@ -96,15 +123,21 @@ header{
     background-color: #D4AF37;
 }
 
-/* TOPNAV */
 
-/* TOPNAV */
+/* TOP NAV */
+
+.topnav {
+    flex-shrink: 0;
+}
 
 .topnav ul {
     list-style-type: none;
+
     display: flex;
     align-items: center;
+
     gap: 30px;
+
     margin: 0;
     padding: 0;
 }
@@ -117,13 +150,19 @@ header{
 .topnav a {
     display: flex;
     align-items: center;
+
     gap: 8px;
+
     text-decoration: none;
+
     color: #ffffff;
+
     font-size: 20px;
     font-weight: 500;
-    transition: 0.3s ease;
+
     white-space: nowrap;
+
+    transition: 0.3s ease;
 }
 
 .topnav a:hover {
@@ -133,6 +172,7 @@ header{
 .topnav a img {
     width: 40px;
     height: auto;
+
     object-fit: contain;
     display: block;
 }
@@ -147,34 +187,52 @@ header{
     line-height: 1;
 }
 
+
 /* MAIN CONTENT */
 
 .Title,
 .content,
 .pagsanjan,
 .daranak {
-    max-width: 900px;
+    width: 900px;
+
     margin: 50px auto;
+
     padding: 0 25px;
 }
 
-.Title h1{
+
+/* TITLE */
+
+.Title h1 {
     font-size: 50px;
+
     margin-bottom: 20px;
+
     text-align: center;
+
     border-bottom: 2px solid gold;
 }
 
-h3{
+
+/* HEADINGS */
+
+h3 {
     font-size: 25px;
+
     margin-bottom: 15px;
+
     border-bottom: 1px solid black;
+
     padding-bottom: 8px;
 }
 
-p{
 
+/* PARAGRAPHS */
+
+p {
     font-size: 17px;
+
     margin-bottom: 15px;
 }
 
@@ -184,106 +242,176 @@ p{
 .pagsanjan img,
 .daranak img {
     max-width: 100%;
+
     height: auto;
+
     display: block;
+
     margin: 0 auto 20px;
+
     border-radius: 0;
 }
+
 
 /* FOOTER */
 
 footer {
     background-color: black;
+
     color: #ffffff;
+
     text-align: center;
+
     padding: 40px 8%;
+
     margin-top: 50px;
+
+    min-width: 1400px;
 }
+
+
+/* FOOTER TOP */
 
 .footer-top {
     display: flex;
+
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+
     gap: 20px;
-    max-width: 1100px;
+
+    width: 1100px;
+
     margin: 0 auto 30px;
+
     text-align: left;
 }
 
+
+/* FOOTER LEFT */
 .footer-left {
     display: flex;
+
     flex-direction: column;
+
     align-items: flex-start;
+
     max-width: 500px;
+
+    flex-shrink: 0;
 }
 
+
+/* FOOTER LOGO */
+
 .footer-logo {
-    line-height: 0;      
+    line-height: 0;
+
     margin-bottom: 1px;
 }
 
 .footer-logo img {
     width: 300px;
+
     height: auto;
-    max-width: 100%;
+
     object-fit: contain;
+
     display: block;
 }
 
+
+/* TAGLINE */
+
 .tagline {
     font-size: 16px;
+
     color: #ffffff;
+
     text-align: left;
+
     margin: 0;
 }
 
+
+/* POWERED BY  */
+
 .poweredby {
     display: flex;
+
     align-items: center;
+
     gap: 10px;
+
     font-size: 15px;
+
     flex-shrink: 0;
+
     white-space: nowrap;
 }
 
 .poweredby img {
     height: 300px;
+
     width: auto;
+
     display: block;
 }
 
+
+/* FOOTER DIVIDER */
+
 .footer-divider {
-  max-width: 1100px;
-  margin: 30px auto;
-  border: none;
-  border-top: 1px solid #3a3a3a;
+    width: 1100px;
+
+    margin: 30px auto;
+
+    border: none;
+
+    border-top: 1px solid #3a3a3a;
 }
+
+
+/* SOCIAL MEDIA */
 
 .bottomnav ul {
     list-style-type: none;
+
     display: flex;
+
     justify-content: center;
     align-items: center;
+
     gap: 18px;
+
     margin-bottom: 10px;
+
     padding: 0;
 }
 
 .bottomnav ul li img {
     width: 50px;
+
     height: auto;
+
     object-fit: contain;
+
     display: block;
 }
 
+
+/* COPYRIGHT  */
+
 .reserved {
     font-size: 14px;
+
     color: #aaaaaa;
+
     margin-top: 100px;
+
     text-align: center;
 }
 
-.reserved b{
+.reserved b {
     color: #D4AF37;
 }
